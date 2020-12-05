@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/popup_group">
+
+        <item android:id="@+id/home_page"
+            app:showAsAction="never"
+            android:enabled="true"
+            android:title="@string/home_page"/>
+
+        <item android:id="@+id/context_menu"
+            app:showAsAction="never"
+            android:enabled="true"
+            android:title="@string/context_menu"/>
+
+        <item android:id="@+id/common_dialog"
+            app:showAsAction="never"
+            android:enabled="true"
+            android:title="@string/common_dialog"/>
+
+        <item android:id="@+id/select_dialog"
+            app:showAsAction="never"
+            android:enabled="true"
+            android:title="@string/select_dialog"/>
+
+    </group>
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/context_menu_group" android:enabled="true" android:visible="true">
+
+        <item android:id="@+id/introduce"
+            app:showAsAction="always"
+            android:title="@string/people_introduce"/>
+
+        <item android:id="@+id/kongfu"
+            app:showAsAction="always"
+            android:title="@string/kongfu"/>
+
+        <item android:id="@+id/attack_value"
+            app:showAsAction="always"
+            android:title="@string/attack_value"/>
+
+    </group>
+</menu>
