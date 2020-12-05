@@ -26,8 +26,9 @@ class VolumeController(
         seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 seekBar ?: return
-                seekBar.progress = progress
                 audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, progress, AudioManager.FLAG_REMOVE_SOUND_AND_VIBRATE)
+                seekBar.progress = progress
+                currentVolume = progress
             }
 
             override fun onStartTrackingTouch(seekBar: SeekBar?) {
