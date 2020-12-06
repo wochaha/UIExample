@@ -1,15 +1,14 @@
-package com.example.uiexample.activity
+package com.example.uiexample.others
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.uiexample.CheckBoxAdapter
 import com.example.uiexample.R
 import com.example.uiexample.ToastUtils
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class OtherPageActivity : AppCompatActivity() {
     private lateinit var fruitAdapter : ArrayAdapter<String>
     private lateinit var checkboxAdapter: CheckBoxAdapter
     private val selectedFruit = arrayListOf<String>()

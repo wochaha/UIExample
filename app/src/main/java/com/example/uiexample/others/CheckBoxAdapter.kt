@@ -1,10 +1,11 @@
-package com.example.uiexample
+package com.example.uiexample.others
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.CheckBox
 import androidx.recyclerview.widget.RecyclerView
+import com.example.uiexample.R
 
 class CheckBoxAdapter(private var content: ArrayList<String>,
                       private val action: (Boolean, String) -> Unit) : RecyclerView.Adapter<CheckboxViewHolder>() {

@@ -1,4 +1,4 @@
-package com.example.uiexample.activity
+package com.example.uiexample
 
 import android.content.Intent
 import android.graphics.Color
@@ -7,11 +7,11 @@ import android.os.Bundle
 import android.view.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import androidx.core.os.bundleOf
-import com.example.uiexample.R
-import com.example.uiexample.ToastUtils
+import com.example.uiexample.skip.CommonDialogActivity
+import com.example.uiexample.skip.ContextMenuActivity
+import com.example.uiexample.skip.HomePageActivity
+import com.example.uiexample.skip.TimePickerActivity
 import kotlinx.android.synthetic.main.toolbar.*
-import java.sql.Time
 
 abstract class BaseActivity : AppCompatActivity() {
     companion object {

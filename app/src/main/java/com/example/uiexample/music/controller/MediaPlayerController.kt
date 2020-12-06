@@ -83,12 +83,13 @@ class MediaPlayerController(
         }
     }
 
-    public fun play(music: MusicItemData) {
+    public fun play(music: MusicItemData): Boolean {
         //同一首歌不切换
-        if (Playing.music == music) return
+        if (Playing.music == music) return false
         reset()
         Playing.music = music
         play()
+        return true
     }
 
     private fun play() {

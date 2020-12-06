@@ -1,11 +1,8 @@
 package com.example.uiexample.music.controller
 
-import android.content.Context
 import android.media.AudioManager
 import android.util.Log
 import android.widget.SeekBar
-import kotlinx.android.synthetic.main.activity_music.*
-import kotlin.math.max
 
 class VolumeController(
     private val audioManager: AudioManager,

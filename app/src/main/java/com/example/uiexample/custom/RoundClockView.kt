@@ -1,4 +1,4 @@
-package com.example.uiexample.view
+package com.example.uiexample.custom
 
 import android.content.Context
 import android.graphics.Canvas
@@ -8,10 +8,7 @@ import android.graphics.Rect
 import android.util.AttributeSet
 import android.util.Log
 import android.view.View
-import java.text.DateFormat
 import java.util.*
-import java.util.jar.Attributes
-import kotlin.math.min
 
 class RoundClockView @JvmOverloads constructor(
     context: Context,

@@ -1,8 +1,8 @@
-package com.example.uiexample.activity
+package com.example.uiexample.skip
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import com.example.uiexample.BaseActivity
 import com.example.uiexample.R
 import com.example.uiexample.ToastUtils
 import kotlinx.android.synthetic.main.activity_context_menu.*

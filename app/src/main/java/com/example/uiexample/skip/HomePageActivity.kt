@@ -1,6 +1,7 @@
-package com.example.uiexample.activity
+package com.example.uiexample.skip
 
 import android.os.Bundle
+import com.example.uiexample.BaseActivity
 import com.example.uiexample.R
 import com.example.uiexample.ToastUtils
 import kotlinx.android.synthetic.main.activity_home_page.*

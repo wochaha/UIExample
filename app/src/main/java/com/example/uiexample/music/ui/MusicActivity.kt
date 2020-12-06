@@ -7,7 +7,7 @@ import android.view.KeyEvent
 import android.view.Menu
 import androidx.lifecycle.ViewModelProvider
 import com.example.uiexample.R
-import com.example.uiexample.activity.BaseActivity
+import com.example.uiexample.BaseActivity
 import com.example.uiexample.music.utils.Playing
 import com.example.uiexample.music.controller.MediaPlayerController
 import com.example.uiexample.music.controller.VolumeController
@@ -29,8 +29,8 @@ class MusicActivity : BaseActivity() {
         MusicAdapter(
             viewModel.musics.value ?: emptyList()
         ) { data ->
-            mediaPlayerController.play(data)
-            play.text = resources.getString(R.string.pause)
+            val result = mediaPlayerController.play(data)
+            if (result) changePlayText(result)
         }
     }
 
@@ -47,19 +47,21 @@ class MusicActivity : BaseActivity() {
 
         music_list.adapter = adapter
 
-        changePlayText()
+        changePlayText(false)
 
         play.setOnClickListener {
             if (Playing.music == null && viewModel.firstMusic != null) {
-                mediaPlayerController.play(viewModel.firstMusic!!)
+                val result = mediaPlayerController.play(viewModel.firstMusic!!)
+                changePlayText(result)
             } else {
                 if (mediaPlayerController.isPlaying()) {
                     mediaPlayerController.pause()
+                    changePlayText(false)
                 } else {
                     mediaPlayerController.reStart()
+                    changePlayText(true)
                 }
             }
-            changePlayText()
         }
 
         stop.setOnClickListener {
@@ -68,8 +70,8 @@ class MusicActivity : BaseActivity() {
         }
     }
 
-    private fun changePlayText() {
-        if (mediaPlayerController.isPlaying()) {
+    private fun changePlayText(isPlaying: Boolean) {
+        if (isPlaying) {
             play.text = resources.getString(R.string.pause)
         } else {
             play.text = resources.getString(R.string.play)

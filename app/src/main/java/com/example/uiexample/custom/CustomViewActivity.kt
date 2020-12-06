@@ -1,9 +1,8 @@
-package com.example.uiexample.activity
+package com.example.uiexample.custom
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.uiexample.R
-import kotlinx.android.synthetic.main.activity_custom_view.*
 
 class CustomViewActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

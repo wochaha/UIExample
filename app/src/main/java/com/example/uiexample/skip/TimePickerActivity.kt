@@ -1,12 +1,10 @@
-package com.example.uiexample.activity
+package com.example.uiexample.skip
 
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
-import android.os.Build
 import android.os.Bundle
-import android.widget.DatePicker
 import android.widget.TimePicker
-import androidx.annotation.RequiresApi
+import com.example.uiexample.BaseActivity
 import com.example.uiexample.R
 import kotlinx.android.synthetic.main.activity_time_picker.*
 import java.lang.StringBuilder

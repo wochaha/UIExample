@@ -1,4 +1,4 @@
-package com.example.uiexample.activity
+package com.example.uiexample.skip
 
 import android.app.AlertDialog
 import android.app.ProgressDialog
@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.TextView
-import androidx.core.os.bundleOf
+import com.example.uiexample.BaseActivity
 import com.example.uiexample.R
 import kotlinx.android.synthetic.main.activity_common_dialog.*
 import java.lang.StringBuilder

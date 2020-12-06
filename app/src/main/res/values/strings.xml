@@ -20,4 +20,30 @@
     <string name="stop">停止</string>
     <string name="progress">进度：</string>
     <string name="volume">音量：</string>
+
+    <string name="d_fi">
+        白日依山尽
+    </string>
+
+    <string name="d_s">
+        黄河入海流
+    </string>
+
+    <string name="d_t">
+        欲穷千里目
+    </string>
+
+    <string name="d_fo">
+        更上一层楼
+    </string>
+
+    <string name="d_f">
+        登鹳雀楼
+    </string>
+    <string name="previous_page">上一页</string>
+    <string name="next_page">下一页</string>
+    <string name="to_gallery">启动故乡图册</string>
+    <string name="to_skip">启动多界面</string>
+    <string name="to_custom_view">启动自定义View界面</string>
+    <string name="to_media_player">启动音乐播放器</string>
 </resources>
